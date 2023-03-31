@@ -25,9 +25,9 @@ url                      : "https://pomottoro.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/imagees.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -107,7 +107,7 @@ author:
   name             : "S.H."
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "뭔가 뭔가 하는 크로스핏터"
-  location         : "Somewhere"
+  location         : "AnyWhere"
   email            :
   links:
     - label: "Email"
@@ -290,3 +290,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
+    date_format: "%Y -%M - %D"
