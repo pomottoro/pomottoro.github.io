@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "crosssh" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "crosssh"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "S.H."
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/imagees.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "뭔가 뭔가 하는 크로스핏터"
   location         : "AnyWhere"
   email            :
