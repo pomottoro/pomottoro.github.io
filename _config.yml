@@ -294,5 +294,6 @@ defaults:
       toc: true
       toc_sticky: true
       breadcrumbs: true
+    author_profile: false
     
 date_format: "%Y-%m-%d"
