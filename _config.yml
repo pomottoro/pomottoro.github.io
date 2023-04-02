@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Be DevOps Engineer"
+title                    : "SH's Note"
 title_separator          : "|"
 subtitle                 : "가보자고"
 name                     : "S.H."
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "S.H."
   avatar           : "/assets/images/imagees.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "뭔가 뭔가 하는 크로스핏터"
+  bio              : "뭔가 뭔가 하고 있음. 아마도"
   # location         : "AnyWhere"
   email            :
   links:
