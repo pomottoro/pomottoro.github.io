@@ -15,6 +15,12 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
+gem "kramdown-parser-gfm"
+gem "webrick", "~> 1.7"
+gem "jemoji"
+gem "github-pages", group: :jekyll_plugins
+gem 'wdm', '>= 0.1.0'
+gem "jekyll-archives"
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
