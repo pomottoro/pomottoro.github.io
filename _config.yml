@@ -285,7 +285,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -294,6 +294,5 @@ defaults:
       toc: true
       toc_sticky: true
       breadcrumbs: true
-    author_profile: false
-    
+
 date_format: "%Y-%m-%d"
