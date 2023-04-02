@@ -294,5 +294,7 @@ defaults:
       toc: true
       toc_sticky: true
       breadcrumbs: true
+      mathjax: true
+      sidebar_main: true
 
 date_format: "%Y-%m-%d"
