@@ -294,7 +294,7 @@ defaults:
       toc: true
       toc_label: 목차
       toc_sticky: true
-      toc_icon: "fa-solid fa-book-sparkles"
+      toc_icon: fa-solid fa-paw"
       breadcrumbs: true
       mathjax: true
       sidebar_main: true
