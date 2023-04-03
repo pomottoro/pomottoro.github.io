@@ -4,11 +4,10 @@
 
 #main {
   @include clearfix;
-  // margin-left: auto;
-  // margin-right: auto;
-  // padding-left: 1em;
-  // padding-right: 1em;
-  padding: 0 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   max-width: 100%;
@@ -40,20 +39,17 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    // padding-right: $right-sidebar-width-narrow;
-    padding: 0 1rem;
+    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    // padding-right: $right-sidebar-width-narrow;
-    padding: 0 1rem;
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
     float: left;
-    // margin-top: 1em;
+    margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -92,13 +88,9 @@ body {
 }
 
 .page__content {
-  h1 {
-    // padding-bottom: 0.5em;
+  h2 {
+    padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
-  }
-
-  h6 {
-    margin: 0.25rem 0;
   }
 
 	h1, h2, h3, h4, h5, h6 {
