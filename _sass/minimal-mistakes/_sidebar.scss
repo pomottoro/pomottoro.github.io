@@ -351,3 +351,58 @@
   }
 }
 
+.category-nav__wrapper {
+  display: none;
+
+  @include breakpoint($large) {
+    display: block;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+  }
+
+//   .category-nav__title {
+//     color: $primary-color;
+//     font-size: $type-size-6;
+//     font-weight: bold;
+//     display: block;
+//     border-bottom: 1px solid $primary-color;
+//     margin-top: 1rem;
+
+//     @include breakpoint($x-large) {
+//       display: block;
+//       font-size: $type-size-5;
+//     }
+//   }
+
+//   .category-nav__item {
+//     a {
+//       color: $muted-text-color;
+      
+//       &:hover {
+//         color: $gray;
+//       }
+//     }
+//   }
+
+//   .category-nav__count {
+//     float: right;
+//   }
+// }
+
+// .sidebar__top {
+//   position: fixed;
+//   bottom: 1em;
+//   right: 1em;
+//   i {
+//     color: $primary-color;
+//     font-size: $type-size-3;
+    
+//     &:hover {
+//       color: $masthead-link-color-hover;
+//     }
+//   }
+// }
