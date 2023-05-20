@@ -35,7 +35,7 @@
   margin: 0.8em 0 0em;
   padding-bottom: 0.5em;
   font-size: $type-size-3;
-  color: $muted-text-color;
+  color: mix(#fff,$primary-color, 40%);
   border-bottom: 1px solid $border-color;
   font-family: $sans-serif;
 
@@ -50,6 +50,7 @@
   line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: $type-size-4;
 
   a[rel="permalink"]::before {
     content: '';
