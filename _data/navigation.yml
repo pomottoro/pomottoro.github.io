@@ -3,9 +3,9 @@ main:
   - title: "Home" 
     url: /index.html
     toggleable: true
-  # - title: "Contact"
-  #   url: /contact/
-  #   toggleable: true
+  - title: "Category"
+    url: /category/
+    toggleable: true
   - title : "Search"
     url: /search/
     toggleable: true
