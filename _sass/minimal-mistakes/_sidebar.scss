@@ -135,7 +135,7 @@
   }
 
   img {
-    max-width: 245px;
+    max-width: 240px;
     border-radius: 17%;
 
     @include breakpoint($large) {
@@ -176,10 +176,12 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-4;
+  color: #fff;
 }
 
 .author__bio {
   margin: 0;
+  font-size: $type-size-4;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -354,18 +356,18 @@
   }
 }
 
-.category-nav__wrapper {
-  display: none;
+// .category-nav__wrapper {
+//   display: none;
 
-  @include breakpoint($large) {
-    display: block;
-  }
+//   @include breakpoint($large) {
+//     display: block;
+//   }
 
-  ul {
-    list-style: none;
-    padding-left: 0;
+//   ul {
+//     list-style: none;
+//     padding-left: 0;
 
-  }
+//   }
 
 //   .category-nav__title {
 //     color: $primary-color;
