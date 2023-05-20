@@ -3,14 +3,14 @@ main:
   - title: "Home" 
     url: /index.html
     toggleable: true
-  - title: "Contact"
-    url: /contact/
-    toggleable: true
-  # - title : "Search"
-  #   url: /search/
+  # - title: "Contact"
+  #   url: /contact/
   #   toggleable: true
+  - title : "Search"
+    url: /search/
+    toggleable: true
 
-  
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
