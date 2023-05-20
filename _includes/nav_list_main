@@ -33,15 +33,15 @@
         <span class="nav__sub-title">Test2</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Test" %}
-                        <li><a href="/categories/Test" class=""> test (with C++) ({{category[1].size}})</a></li>
+                    {% if category[0] == "Test2" %}
+                        <li><a href="/categories/Test2" class=""> test ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Test" %}
-                        <li><a href="/categories/Test" class="">test ({{category[1].size}})</a></li>
+                    {% if category[0] == "tEst2" %}
+                        <li><a href="/categories/Test2" class="">test ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
