@@ -34,14 +34,14 @@
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Example" %}
-                            <li><a href="/categories/Test2" class=""> Example ({{category[1].size}})</a></li>
+                            <li><a href="/categories/Example" class=""> Example ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Example" %}
-                            <li><a href="/categories/Test2" class=""> Example ({{category[1].size}})</a></li>
+                            <li><a href="/categories/Example" class=""> Example ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
