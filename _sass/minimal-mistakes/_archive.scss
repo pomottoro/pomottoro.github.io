@@ -37,7 +37,7 @@
   font-size: $type-size-3;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
-  font-family: $serif;
+  font-family: $sans-serif;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -46,7 +46,7 @@
 
 .archive__item-title {
   margin-bottom: 0.9em;
-  font-family: $sans-serif-narrow;
+  font-family: $sans-serif;
   line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;

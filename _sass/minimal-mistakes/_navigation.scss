@@ -116,6 +116,7 @@
       }
     }
   }
+}
 
   .pagination_prev_next {
     @include clearfix();
@@ -156,7 +157,8 @@
     }
 
     &:last-child {
-      margin-left: -1px;
+      // margin-left: -1px;
+      margin-bottom: 1em;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
