@@ -28,3 +28,6 @@ codekit-config.json
 _asset_bundler_cache
 _site
 Jeklly gitignore list
+
+#image folde
+/assets/images/imagegg/*
