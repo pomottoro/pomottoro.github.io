@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "Home"
+  - title: "🏡" 
     url: /index.html
-  - title : "Search"
+  - title : "🔍"
     url: /search/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
