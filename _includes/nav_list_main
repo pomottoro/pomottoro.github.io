@@ -25,7 +25,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "test" %}
+                    {% if category[0] == "Test" %}
                         <li><a href="/categories/Test" class=""> test ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -34,14 +34,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Test2" %}
-                        <li><a href="/categories/Test2" class=""> test ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Test2" class=""> Test2 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "tEst2" %}
-                        <li><a href="/categories/Test2" class="">test ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Test2" class=""> Test2 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
