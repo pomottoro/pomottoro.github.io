@@ -137,20 +137,6 @@ body {
     }
   }
 
-  :not(pre) > code {
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    font-size: 0.8em;
-    background: $code-background-color;
-    border-radius: $border-radius;
-
-    &::before,
-    &::after {
-      letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
-    }
-  }
-
   dt {
     margin-top: 1em;
     font-family: $sans-serif;
@@ -166,6 +152,7 @@ body {
   .small {
     font-size: $type-size-6;
   }
+
 
   /* blockquote citations */
   blockquote + .small {
@@ -311,15 +298,9 @@ body {
 }
 
 .page__meta-title {
+  margin-top: 1px;
   margin-bottom: 10px;
-  font-size: $type-size-6;
-  text-transform: uppercase;
-}
-
-.page__meta-sep::before {
-  content: "\2022";
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  font-size: $type-size-5;
 }
 
 /*
@@ -329,7 +310,7 @@ body {
 .page__taxonomy {
   margin-top: -10px;
   .sep {
-    display: none;
+    display: inline;
   }
 
   strong {
@@ -436,7 +417,7 @@ body {
   display: block;
   clear: both;
   color: $muted-text-color;
-  font-size: 0.6em;
+  font-size: 0.9em;
   text-transform: uppercase;
   text-align: right;
   text-decoration: none;
