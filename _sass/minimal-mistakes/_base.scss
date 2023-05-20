@@ -63,14 +63,20 @@ small,
   font-size: $type-size-6;
 }
 
+summary {
+  cursor:pointer;
+  color:rgb(255, 249, 194);
+}
+
 p {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.0em;
 }
 
 u,
 ins {
   text-decoration: none;
   border-bottom: 1px solid $text-color;
+  padding-bottom: 4.5px;
   a {
     color: inherit;
   }
