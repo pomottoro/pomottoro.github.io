@@ -1,7 +1,7 @@
 ---
-title: "Project"
+title: "Project3"
 layout: archive
-permalink: categories/Project
+permalink: categories/project3
 author_profile: true
 sidebar_main: true
 ---
