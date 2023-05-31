@@ -331,10 +331,10 @@ body {
   text-decoration: none;
   border: 2px solid $background-color;
   border-radius: $border-radius;
-  background-color: #f0d385;
+  background-color: #4D5357;
   font-family: $otfbold;
-  font-size: 1.3em;
-  color: #fff;
+  font-size: 1.35em;
+  color: $primary-color;
 
   &:hover {
     text-decoration: none;
@@ -350,10 +350,10 @@ body {
   text-decoration: none;
   border: 2px solid $background-color;
   border-radius: $border-radius;
-  background-color: #ebc276;
+  background-color: mix(#fff, #4D5357, 18%);
   font-family: $otfbold;
-  font-size: 1.3em;
-  color: #fff;
+  font-size: 1.4em;
+  color: mix(#fff, $primary-color, 2%);;
 
   &:hover {
     text-decoration: none;
