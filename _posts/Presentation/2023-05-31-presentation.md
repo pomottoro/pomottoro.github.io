@@ -77,7 +77,7 @@ last_modified_at: 2023-05-31
 >  REPORT RequestId: f1d3fc9a-4875-4c34-b280-a5fae40abcf9	Duration: 20.21 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 58 MB	Init Duration: 2.04 ms	
 >  ```
 >
->  함수가 사용 가능한 메모리의 일부만 사용함( **max memory used** )을 볼 수 있습니다. 이 문제가 지속적으로 발생하는 경우 함수에 할당된 메모리 양을 조정하여 <u>**비용을 줄일 수**</u> 있습니다.
+>  함수가 사용 가능한 메모리의 일부만 사용함( **max memory used** )을 볼 수 있습니다. 이 문제가 지속적으로 발생하는 경우 함수에 할당된 메모리 양을 조정하여 **<u>비용을 줄일 수</u>** 있습니다.
 >
 >  ![AWS Lambda 함수의 메모리 사용량과 메모리 크기](https://imgix.datadoghq.com/img/blog/key-metrics-for-monitoring-aws-lambda/lambda_available_memory_max_memory.png?auto=format&fit=max&w=847)
 >
