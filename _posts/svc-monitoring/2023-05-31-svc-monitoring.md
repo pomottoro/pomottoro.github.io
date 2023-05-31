@@ -28,7 +28,7 @@ last_modified_at: 2023-05-31
 
 
 
-### 구글이 이야기하는 모니터링의 목표
+## 구글이 이야기하는 모니터링의 목표
 
 - 장기적인 트렌드 분석 (Analyzing long-term trends)
   - 데이터베이스가 얼마만큼의 용량을 차지하며, 얼마나 빨리 용량이 증가하는가?
@@ -40,18 +40,18 @@ last_modified_at: 2023-05-31
 - 경고 (Alerting)
   - 인프라의 어떤 부분이 고장 났는가? 혹은 고장 날 수 있는가?
 
-레퍼런스: https://sre.google/sre-book/monitoring-distributed-systems/
+레퍼런스: [https://sre.google/sre-book/monitoring-distributed-systems/](https://sre.google/sre-book/monitoring-distributed-systems/)
 
 
 
-### Azure 서비스에서 측정하는 메트릭의 주요 예
+## Azure 서비스에서 측정하는 메트릭의 주요 예
 
 - 캐시 사용률
 - CPU, Memory
 - 인스턴스의 개수
 - 연결 유지
 
-레퍼런스: https://docs.microsoft.com/ko-kr/azure/data-explorer/using-metrics
+레퍼런스: [https://docs.microsoft.com/ko-kr/azure/data-explorer/using-metrics](https://docs.microsoft.com/ko-kr/azure/data-explorer/using-metrics)
 
 # 모니터링 구분
 
@@ -78,7 +78,7 @@ last_modified_at: 2023-05-31
 
 >  애플리케이션 서버(WAS)의 앞단에 캐시 서버 혹은 인증 서버, 로드 밸런서와 같은 Proxy 서버가 존재한다면, 이는 애플리케이션 서버와는 별도로 모니터링해야 합니다. 애플리케이션 서버가 각 노드의 컴퓨팅 자원을 모니터링하는 데에 중점을 두었다면, Proxy 서버, 그중에서도 HTTP 라우팅을 다루고 있는 서버는 요청 그 자체와 연관된 메트릭을 위주로 모니터링해야 합니다.
 
-> ####  HTTP 요청/응답 관련 모니터링 대상
+> ###  HTTP 요청/응답 관련 모니터링 대상
 >
 > - 쿠버네티스의 경우 **인그레스**
 > -  AWS 생태계에서는 **Application Load Balancer**
