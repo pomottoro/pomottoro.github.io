@@ -36,6 +36,7 @@ body {
 }
 
 .page {
+  font-family: $pagefont;
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
@@ -286,7 +287,7 @@ body {
 .page__meta {
   margin-top: 2em;
   color: $muted-text-color;
-  font-family: $pagefont;
+  font-family: $sans-serif;
   font-size: $type-size-6;
 
   p {
