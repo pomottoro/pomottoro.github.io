@@ -90,14 +90,12 @@ body {
   margin-top: 20px;
 
   h2 {
-    font-family: $pagefont; 
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
 
 	h1, h2, h3, h4, h5, h6 {
 		.header-link {
-      font-family: $pagefont; 
 			position: relative;
 			left: 0.5em;
 			opacity: 0;
