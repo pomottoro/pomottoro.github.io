@@ -2,7 +2,7 @@
 title: "모니터링의 목표와 측정 항목"
 excerpt: "서비스 모니터링"
 
-categories: ["서비스 모니터링"]
+categories: svc-monitoring
 tags: ["서비스 모니터링", "메트릭", "SRE", "블랙박스", "화이트박스"]
 
 date: 2023-05-31
