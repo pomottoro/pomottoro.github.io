@@ -7,3 +7,24 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* NoonNu Font */
+@font-face {
+  font-family: 'Dovemayo_wild';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/Dovemayo_wild.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* "Pretendard-Regular" */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Giscus Size */
+.giscus {
+  max-width: 100% !important;
+}

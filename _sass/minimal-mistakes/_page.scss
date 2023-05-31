@@ -69,6 +69,7 @@ body {
 }
 
 .page__title {
+  font-family: $sans-serif;
   margin-top: 0;
   line-height: 1.2;
   color: mix(#fff, $primary-color, 40%);
@@ -79,7 +80,7 @@ body {
 }
 
 .page__lead {
-  font-family: $global-font-family;
+  font-family: $pagefont;
   font-size: $type-size-4;
 }
 

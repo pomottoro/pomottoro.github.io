@@ -157,3 +157,6 @@ last_modified_at: 2023-05-31
 ### RED 패턴
 
 - RED 패턴은 비율(Rate), 오류(Errors) 및 기간(Duration)을 주요 메트릭으로 정의하는 패턴입니다.
+
+---
+</br>
