@@ -9,11 +9,24 @@ date: 2023-05-31
 last_modified_at: 2023-05-31
 ---
 
+# 	메트릭이란?
+
+---
+
+> 메트릭은 **시간에 따라 측정한 결과값**입니다. 보다 넓은 의미로는 **비즈니스 개념을 나타내는 수치 측정**을 의미하기도 합니다.
+>  예를 들어, 시간당 CPU 사용률, 연간 순매출과 같이 시간이라는 차원이 함께 적용되어야 합니다. 시간이 아닌 다른 차원(예를 들어, 서비스 별 매출)을 기준으로 삼을 수도 있습니다.
 
 
 
+# 	모니터링의 목표
 
-# 
+---
+
+> 1. 시간을 기준으로 측정되는 주요 메트릭을 최소화하여 **고가용성**을 달성
+> 2. 사용량을 추적하여, 배포에 앞서 세운 **가설을 검증하고 개선**
+>    - 애자일에서는 “[검증된 학습(Validated learning)](https://www.boldare.com/blog/lean-startup-validated-learning/)을 적용한다”라고 합니다.
+
+
 
 # 계층별 메트릭과 메트릭 구분
 
@@ -39,3 +52,4 @@ last_modified_at: 2023-05-31
 - [ELB 키 메트릭](https://www.datadoghq.com/blog/top-elb-health-and-performance-metrics/)
 - [EC2 키 메트릭](https://www.datadoghq.com/blog/ec2-monitoring/)
 - [AWS 키 메트릭](https://www.datadoghq.com/blog/aws-fargate-metrics/)
+
