@@ -70,7 +70,7 @@ body {
 }
 
 .page__title {
-  font-family: $sans-serif;
+  font-family: $pagefont;
   margin-top: 0;
   line-height: 1.2;
   color: mix(#fff, $primary-color, 40%);
@@ -81,11 +81,12 @@ body {
 }
 
 .page__lead {
-  font-family: $sans-serif; 
+  font-family: $pagefont; 
   font-size: $type-size-4;
 }
 
 .page__content {
+  font-family: $pagefont; 
   margin-top: 20px;
 
   h2 {
@@ -152,6 +153,7 @@ body {
   }
 
   .small {
+    font-family: $pagefont; 
     font-size: $type-size-6;
   }
 
@@ -588,3 +590,4 @@ body {
     }
   }
 }
+
