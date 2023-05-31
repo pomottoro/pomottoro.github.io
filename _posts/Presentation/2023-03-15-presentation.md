@@ -3,7 +3,7 @@ title: "23-03-15 Presentation"
 excerpt: "웹서비스 개발 기초"
 
 categories: ["Presentation"]
-tags: ["Presentation", "public IP", "Private IP", "nslookup", "DNS"]
+tags: ["public IP", "Private IP", "nslookup", "DNS"]
 
 date: 2023-03-15
 last_modified_at: 2023-05-31
@@ -126,3 +126,7 @@ DNS 서버는 이 요청을 받으면, 자신의 캐시에 이 도메인 이름�
 따라서, 검색창에 **[http://google.com을](http://google.xn--com-of0o)** 입력하면, DNS는 이 도메인 이름에 해당하는 IP 주소를 찾기 위해 다른 DNS 서버들과 통신하며, 최종적으로 이 IP 주소를 사용자의 컴퓨터로 전달해주게 됩니다.
 
 출처 : https://medium.com/@sidneyriffic/what-happens-after-you-type-google-com-into-your-browser-and-hit-enter-bf5d548b47eb
+
+
+
+---

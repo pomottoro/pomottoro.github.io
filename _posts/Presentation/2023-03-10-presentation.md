@@ -3,7 +3,7 @@ title: "23-03-10 Presentation"
 excerpt: "리눅스"
 
 categories: ["Presentation"]
-tags: ["Presentation", "리눅스", "표준스트림", "stdin", "stdout", "stderr", "파이프라인", "리다이렉션"]
+tags: ["리눅스", "표준스트림", "stdin", "stdout", "stderr", "파이프라인", "리다이렉션"]
 
 date: 2023-03-10
 last_modified_at: 2023-05-31
@@ -62,3 +62,7 @@ last_modified_at: 2023-05-31
    2. `head` 명령은 입력 받은 `ps.txt` 의 내용에서 처음 10줄을 출력합니다.
    3. `head` 명령의 출력 스트림을 `sample.txt` 파일에 연결합니다.
    4. `head` 명령의 출력 스트림은 결과를 `sample.txt` 파일에 저장합니다.
+
+
+
+---

@@ -1,0 +1,222 @@
+---
+title: "23-05-18 Presentation"
+excerpt: "컨테이너 오케스트레이션"
+
+categories: ["Presentation"]
+tags: ["쿠버네티스", "k8s", "블루/그린 배포", "카나리 배포", "ClusterIP", "NodePort", "LoadBalancer", "ExternalName"]
+
+date: 2023-05-18
+last_modified_at: 2023-05-31
+---
+
+# [Q1.]디플로이먼트가 지원하는 배포 전략에서 블루/그린이나 카나리는 찾아볼 수 없습니다. 어떻게 블루/그린이나 카나리 배포를 할 수 있을까요?
+
+---
+
+블루/그린 또는 카나리 배포는 소프트웨어 배포 시 사용되는 전략 중 하나로, 사용자들이 **서비스를 중단하지 않고** 새로운 기능 및 업데이트를 안전하게 배포할 수 있도록 도와줍니다. 이를 위해서는 쿠버네티스 클러스터 내에서 여러 버전의 앱을 동시에 실행하고, 쿠버네티스 오브젝트(예: 서비스 리소스)를 사용하여 라우팅 및 관리를 수행해야 합니다.
+
+**블루/그린** 전략을 사용하는 경우, 새로운 버전의 앱을 배포하고 나서 *기존 버전의 앱과 함께 운영하는 방식*으로 전환합니다. 이를 위해서는 **먼저 새로운 앱 버전을 배포**하고, **서비스 리소스를 업데이트하여 새로운 버전으로 라우팅하도록 설정**합니다. 이렇게 함으로써 기존 사용자들은 기존 버전의 앱에 여전히 접근할 수 있으며, 새로운 사용자들은 새로운 버전의 앱에 접근할 수 있습니다.
+
+**카나리 배포**는 블루/그린 전략과 유사하지만, <u>**새로운 앱 버전을 일부 사용자들에게만 노출시키고 나머지 사용자들에게는 기존 버전의 앱을 계속 사용하도록 하는 방식**</u>입니다. 이를 통해 새로운 기능이나 업데이트에 대한 피드백을 먼저 수집하고, 문제가 발생할 경우 전체 사용자들에게 영향을 끼치지 않도록 대처할 수 있습니다.
+
+> 아래는 카나리 배포의 예시 코드입니다.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    app: my-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: my-app:canary
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app
+spec:
+  selector:
+    app: my-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-by-header: "User-Agent"
+spec:
+  rules:
+    - host: my-app.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app
+                port:
+                  name: http
+        # Canary backend:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app
+                port:
+                  name: http
+                weight: 5
+```
+
+> 아래는 블루/그린 배포의 예시 코드입니다.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    app: my-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: my-app:blue
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app
+spec:
+  selector:
+    app: my-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+spec:
+  rules:
+    - host: my-app.example.com
+      http:
+        paths:
+          - path: /blue
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app
+                port:
+                  name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-green
+  labels:
+    app: my-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app-green
+  template:
+    metadata:
+      labels:
+        app: my-app-green
+    spec:
+      containers:
+        - name: my-app
+          image: my-app:green
+          ports:
+            - containerPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-by-header: "User-Agent"
+spec:
+  rules:
+    - host: my-app.example.com
+      http:
+        paths:
+          - path: /green
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app-green
+                port:
+                  name: http
+```
+
+
+
+---
+
+# [Q.2] 서비스의 타입은 ClusterIP, NodePort, LoadBalancer, ExternalName 네 가지가 있습니다. 이들은 어떻게 다른가요?
+
+---
+
+- ## ClusterIP
+
+> ClusterIP 서비스는 클러스터 내부에서만 접근 가능한 가상 IP 주소를 할당하여, 일반적으로 같은 클러스터 내의 파드 간의 통신을 위해 사용됩니다. 이 서비스 유형은 일반적으로 다른 파드와 통신할 때, 그리고 다른 서비스에서 이 서비스를 참조할 때 사용됩니다.
+>
+> ClusterIP 서비스는 파드의 IP 주소와는 다른 가상 IP 주소를 가집니다. 이 가상 IP 주소는 서비스를 생성할 때 자동으로 생성되며, 또한 DNS 이름을 통해 서비스에 액세스할 수 있습니다.
+
+- ## NodePort
+
+> NodePort 서비스는 클러스터의 모든 노드에 포트를 열어서 외부에서 접근할 수 있도록 합니다. 이 서비스 유형은 클러스터 외부에서 액세스하려는 경우 사용됩니다.
+>
+> NodePort 서비스를 생성하면 클러스터 외부에서 노드의 IP 주소와 지정된 포트로 서비스에 액세스할 수 있습니다. NodePort 서비스는 기본적으로 30000 ~ 32767의 포트 범위에서 무작위로 포트가 할당됩니다.
+
+- ## LoadBalancer
+
+> LoadBalancer 서비스는 클라우드 프로바이더에서 제공하는 로드 밸런서를 사용하여 클러스터 외부에서 액세스할 수 있도록 합니다. 이 서비스 유형은 클러스터 외부에서 액세스하려는 경우, 특히 고가용성 및 확장성이 필요한 경우 사용됩니다.
+>
+> LoadBalancer 서비스를 생성하면 클러스터 외부에서 고유한 IP 주소를 가진 로드 밸런서가 생성되며, 이를 통해 클러스터 내부의 파드에 액세스할 수 있습니다.
+
+- ## ExternalName
+
+> ExternalName 서비스는 외부 서비스를 참조하는 가상 서비스를 생성합니다. 이 서비스 유형은 클러스터 내부에서 외부 서비스에 액세스하려는 경우 사용됩니다.
+>
+> ExternalName 서비스를 생성하면 클러스터 내부에서 가상 IP 주소를 가지는 서비스가 생성되며, 이를 통해 외부 서비스에 액세스할 수 있습니다. 이 서비스 유형은 DNS 이름을 사용하여 서비스에 액세스하는 경우 사용됩니다.
+
+
+
+---

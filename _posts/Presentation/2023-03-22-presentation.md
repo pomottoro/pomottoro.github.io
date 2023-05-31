@@ -1,0 +1,26 @@
+---
+title: "23-03-22 Presentation"
+excerpt: "HTTP의 구조와 요청, 응답"
+
+categories: ["Presentation"]
+tags: ["HTTP"]
+
+date: 2023-03-22
+last_modified_at: 2023-05-31
+---
+
+# Q1. 스크린샷을 보고, HTTP의 구조, 요청과 응답, 헤더 등 유추할 수 있는 내용을 모두 작성하세요.
+
+---
+
+![스크린샷](https://github.com/pomottoro/comments/assets/58872932/92d7bbb1-adbe-4535-a15c-d6de58cc1616)
+
+![1](https://github.com/pomottoro/comments/assets/58872932/240c2404-3a9f-49fb-b272-157c5fcbaa79)
+
+![2](https://github.com/pomottoro/comments/assets/58872932/9fc841b5-780e-40f8-9d6c-f4856b74d8f8)
+
+![3](https://github.com/pomottoro/comments/assets/58872932/bd580a51-6330-4c79-98ed-865f849054b3)
+
+
+
+---

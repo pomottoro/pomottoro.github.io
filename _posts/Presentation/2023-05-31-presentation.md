@@ -3,7 +3,7 @@ title: "23-05-31 Presentation"
 excerpt: "서비스 모니터링"
 
 categories: ["Presentation"]
-tags: ["Presentation", "서비스 모니터링"]
+tags: ["서비스 모니터링"]
 
 date: 2023-05-31
 last_modified_at: 2023-05-31
@@ -166,3 +166,6 @@ kubectl describe pods ${POD_NAME}
 
 ### 			🎵 참고자료 :  [파드 디버깅 하기](https://kubernetes.io/ko/docs/tasks/debug/debug-application/debug-pods/), [예시:Pending상태의 파드 디버깅하기](https://kubernetes.io/ko/docs/tasks/debug/debug-application/debug-running-pod/#%EC%98%88%EC%8B%9C-pending-%EC%83%81%ED%83%9C%EC%9D%98-%ED%8C%8C%EB%93%9C-%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0)
 
+
+
+---

@@ -3,7 +3,7 @@ title: "23-03-09 Presentation"
 excerpt: "리눅스 명령어"
 
 categories: ["Presentation"]
-tags: ["Presentation", "리눅스 명령어", "리눅스"]
+tags: ["리눅스 명령어", "리눅스"]
 
 date: 2023-03-09
 last_modified_at: 2023-05-31
@@ -47,3 +47,7 @@ last_modified_at: 2023-05-31
 - /tmp : 임시 파일들이 위치합니다.
 - /usr : 사용자 관련 파일들이 위치합니다.
 - /var : 시스템 로그 파일들이 위치합니다.
+
+
+
+---
