@@ -12,7 +12,7 @@
         </li>
         <li>
             <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-            <span class="nav__sub-title">Project</span>
+            <span class="nav__sub-title"> Project </span>
                 <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
                 <ul>
                     <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
@@ -20,6 +20,34 @@
                     {% for category in site.categories %}
                         {% if category[0] == "Project" %}
                             <li><a href="/categories/project3" class=""> Project3 ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+        </li>
+        <li>
+            <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+            <span class="nav__sub-title"> 서비스 모니터링 </span>
+                <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+                <ul>
+                    <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                    <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                    {% for category in site.categories %}
+                        {% if category[0] == "서비스 모니터링" %}
+                            <li><a href="/categories/svc-monitoring" class=""> 서비스 모니터링 ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+        </li>
+        <li>
+            <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+            <span class="nav__sub-title"> Presentation </span>
+                <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+                <ul>
+                    <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                    <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                    {% for category in site.categories %}
+                        {% if category[0] == "Presentation" %}
+                            <li><a href="/categories/presentation" class=""> Presentation ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
