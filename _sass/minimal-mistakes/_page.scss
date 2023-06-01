@@ -303,7 +303,7 @@ body {
 }
 
 .page__meta-title {
-  margin-top: 1px;
+  margin-top: 2em;
   margin-bottom: 10px;
   font-size: $type-size-5;
 }
@@ -325,13 +325,12 @@ body {
 
 .page__taxonomy-item-tag {
   display: inside;
-  margin-right: 5px;
+  margin-right: 3px;
   margin-bottom: 8px;
-  margin-top: 8px;
-  padding: 3px 8px;
+  padding: 10px 10px 5px 10px;
   text-decoration: none;
-  border: 2px solid $background-color;
-  border-radius: $border-radius;
+  border: 0px solid $background-color;
+  border-radius: 0.7em;
   background-color: #4D5357;
   font-family: $otfbold;
   font-size: 1.35em;
@@ -345,13 +344,12 @@ body {
 
 .page__taxonomy-item-category {
   display: inside;
-  margin-right: 5px;
+  margin-right: 3px;
   margin-bottom: 8px;
-  margin-top: 8px;
-  padding: 3px 8px;
+  padding: 10px 10px 5px 10px;
   text-decoration: none;
-  border: 2px solid $background-color;
-  border-radius: $border-radius;
+  border: 0px solid $background-color;
+  border-radius: 0.7em;
   background-color: mix(#fff, #4D5357, 18%);
   font-family: $otfbold;
   font-size: 1.4em;
