@@ -17,19 +17,24 @@ table {
 }
 
 thead {
-  background-color: $border-color;
-  border-bottom: 2px solid mix(#000, $border-color, 25%);
+  background-color: #00adb5;
+  border-bottom: 5px double #a5d6ff;
+  border-top: 5px double #a5d6ff;
 }
 
 th {
-  padding: 0.4em;
+  font-family: $otfbold;
+  font-size: 1.15em;
+  padding: 0.5em;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+  text-align-last: center;
+  border: 1px solid #a5d6ff;
 }
 
 td {
   padding: 0.4em;
-  border-bottom: 1px solid mix(#000, $border-color, 25%);
+  border: 1px solid #3d4144;
 }
 
 tr,
