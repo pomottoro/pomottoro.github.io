@@ -13,8 +13,8 @@
 
   &__inner-wrap {
     @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     padding: 1em;
     max-width: 100%;
     display: -webkit-box;
@@ -27,7 +27,7 @@
     font-weight: bold;
 
     @include breakpoint($x-large) {
-      max-width: $max-width;
+      max-width: -webkit-fill-available;
     }
 
     nav {
