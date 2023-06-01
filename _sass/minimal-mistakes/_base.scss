@@ -147,16 +147,6 @@ a {
     color: $link-color-hover;
     outline: 0;
   }
-
-  /* 밑줄 위치 수정 */
-  &:after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    display: block;
-    position: absolute;
-    margin-top: 1px;
-  }
 }
 
 /* buttons */
