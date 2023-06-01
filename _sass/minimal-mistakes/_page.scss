@@ -337,8 +337,10 @@ body {
   color: $primary-color;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
+    padding: 0.5em;
+    margin: 0.4em;
   }
 }
 
@@ -356,8 +358,10 @@ body {
   color: mix(#fff, $primary-color, 2%);;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
+    padding: 0.4em;
+    margin: 0.4em;
   }
 }
 
