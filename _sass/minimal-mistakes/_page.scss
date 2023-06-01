@@ -336,6 +336,11 @@ body {
   font-size: 1.35em;
   color: $primary-color;
 
+  &:visited {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
   &:hover {
     text-decoration: underline;
     color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
@@ -352,10 +357,15 @@ body {
   text-decoration: none;
   border: 0px solid $background-color;
   border-radius: 0.7em;
-  background-color: mix(#fff, #4D5357, 18%);
+  background-color: #a9dde0;
   font-family: $otfbold;
   font-size: 1.4em;
-  color: mix(#fff, $primary-color, 2%);;
+  color: mix(#fff, $primary-color, 2%);
+
+  &:visited {
+    color: $primary-color;
+    text-decoration: none;
+  }
 
   &:hover {
     text-decoration: underline;
