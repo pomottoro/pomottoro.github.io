@@ -7,12 +7,12 @@ table {
   margin-bottom: 1em;
   width: 100%;
   font-family: $pagefont;
-  font-size: 1.3em;
+  font-size: 1em;
   border-collapse: collapse;
   overflow-x: auto;
 
   & + table {
-    margin-top: 1.2em;
+    margin-top: 1em;
   }
 }
 
@@ -22,13 +22,13 @@ thead {
 }
 
 th {
-  padding: 0.7em;
+  padding: 0.4em;
   font-weight: bold;
   text-align: left;
 }
 
 td {
-  padding: 0.7em;
+  padding: 0.4em;
   border-bottom: 1px solid mix(#000, $border-color, 25%);
 }
 
