@@ -335,6 +335,7 @@ body {
   font-family: $otfbold;
   font-size: 1.35em;
   color: $primary-color;
+  white-space: nowrap;
 
   &:visited {
     color: $primary-color;
