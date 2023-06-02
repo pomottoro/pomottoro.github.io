@@ -1,2 +1,6 @@
-개인 공부 기록 블로그
-pomottoro.github.io
+# [✔ 개인 공부 기록 블로그](pomottoro.github.io)
+
+---
+
+[pomottoro.github.io](pomottoro.github.io)
+
