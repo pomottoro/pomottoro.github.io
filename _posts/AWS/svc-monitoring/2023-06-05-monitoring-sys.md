@@ -148,7 +148,7 @@ kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
 ![image](https://github.com/pomottoro/comments/assets/58872932/2ab20721-4622-48e6-aec2-51baa544da8d)
 
 <div class="notice" markdown="1">
-## SRE의 네 가지의 황금 시그널을 보기 위해 필요한 메트릭의 종류는 다음과 같습니다.
+### SRE의 네 가지의 황금 시그널을 보기 위해 필요한 메트릭의 종류는 다음과 같습니다.
 - 트래픽, 오류
   - nginx_ingress_controller_requests
 - 대기 시간
