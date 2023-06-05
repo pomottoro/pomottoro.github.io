@@ -147,7 +147,7 @@ kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
 ![image](https://github.com/pomottoro/comments/assets/58872932/e65ecb45-a138-4b5d-ad73-db15c47d7c58)
 ![image](https://github.com/pomottoro/comments/assets/58872932/2ab20721-4622-48e6-aec2-51baa544da8d)
 
- <div class="notice" markdown="1">
+<div class="notice" markdown="1">
 ## SRE의 네 가지의 황금 시그널을 보기 위해 필요한 메트릭의 종류는 다음과 같습니다.
 - 트래픽, 오류
   - nginx_ingress_controller_requests
@@ -156,10 +156,7 @@ kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
   - nginx_ingress_controller_request_duration_seconds_bucket
 - 포화 수준
   - node_cpu_seconds_total
-    </div>
-
-
-
+</div>
 
 프로메테우스가 지원하는 PromQL을 통해 다음과 같이 복잡한 지표를 표현할 수도 있습니다.
 
@@ -195,7 +192,7 @@ by (ingress)
 
 Panel의 제목을 클릭하고 Edit 버튼을 누르면, 다음과 같이 쿼리문을 확인할 수 있습니다.
 
-![image-20230605190706804](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20230605190706804.png)
+![image-20230605190706804](https://github.com/pomottoro/comments/assets/58872932/fb1232be-6eef-45d7-b0ef-4db0b337257f)
 
 또한 Create - Import 메뉴를 이용하면, 기존에 커뮤니티에서 만들어놓은 대시보드를 손쉽게 Import 할 수 있습니다.
 
@@ -215,3 +212,4 @@ Panel의 제목을 클릭하고 Edit 버튼을 누르면, 다음과 같이 쿼�
 ---
 
 <br>
+
