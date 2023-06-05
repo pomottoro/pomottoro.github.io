@@ -202,6 +202,14 @@ Panel의 제목을 클릭하고 Edit 버튼을 누르면, 다음과 같이 쿼�
 - [NGINX Ingress controller](https://grafana.com/grafana/dashboards/9614)
 - [쿠버네티스 올인원 모니터링 대시보드](https://grafana.com/grafana/dashboards/13770)
 
+# 💡 참고 레퍼런스
+
+그라파나 대쉬보드 : [https://github.com/kubernetes/ingress-nginx/tree/main/deploy/grafana/dashboards](https://github.com/kubernetes/ingress-nginx/tree/main/deploy/grafana/dashboards)
+
+오픈 텔레메트리 데모 : [https://github.com/open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
+
+그라파나 대쉬보드 : [https://github.com/prometheus-operator/kube-prometheus/blob/main/manifests/grafana-dashboardDatasources.yaml](https://github.com/prometheus-operator/kube-prometheus/blob/main/manifests/grafana-dashboardDatasources.yaml)
+
 <br>
 
 ---
