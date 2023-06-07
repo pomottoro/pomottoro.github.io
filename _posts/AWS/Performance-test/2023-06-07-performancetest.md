@@ -3,7 +3,7 @@ title: "부하 테스트의 기본"
 excerpt: "부하 테스트 기본"
 
 categories: ["Performance Test"]
-tags: ["부하 테스트"]
+tags: ["부하 테스트", "Throughput", "Latency", "Lock"]
 
 date: 2023-06-07
 last_modified_at: 2023-06-07
