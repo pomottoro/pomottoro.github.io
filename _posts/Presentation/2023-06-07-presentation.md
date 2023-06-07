@@ -27,6 +27,8 @@ last_modified_at: 2023-06-07
 
  [https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/burstable-credits-baseline-concepts.html]( https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/burstable-credits-baseline-concepts.html)
 
+[https://instances.vantage.sh/?region=ap-northeast-2](https://instances.vantage.sh/?region=ap-northeast-2)
+
 <br>
 
 ---
