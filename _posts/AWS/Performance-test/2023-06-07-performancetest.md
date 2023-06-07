@@ -1,9 +1,9 @@
 ---
 title: "부하 테스트의 기본"
-excerpt: "성능 테스트"
+excerpt: "부하 테스트 기본"
 
 categories: ["Performance Test"]
-tags: ["성능 테스트"]
+tags: ["부하 테스트"]
 
 date: 2023-06-07
 last_modified_at: 2023-06-07
@@ -93,3 +93,4 @@ Q. 시스템 잠금(Lock)에 대한 경합(Race condition)은 어느 때 발생�
 ---
 
 <br>
+
