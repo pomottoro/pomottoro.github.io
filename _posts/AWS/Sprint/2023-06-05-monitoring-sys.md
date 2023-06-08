@@ -2,7 +2,7 @@
 title: "모니터링 시스템 구축"
 excerpt: "nginx ingress controller"
 
-categories: ["Service Monitoring"]
+categories: ["Sprint"]
 tags: ["서비스 모니터링", "nginx ingress"]
 
 date: 2023-06-05

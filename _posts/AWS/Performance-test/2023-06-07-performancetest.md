@@ -1,6 +1,6 @@
 ---
 title: "부하 테스트의 기본"
-excerpt: "부하 테스트 기본"
+excerpt: "성능 테스트"
 
 categories: ["Performance Test"]
 tags: ["부하 테스트", "Throughput", "Latency", "Lock"]

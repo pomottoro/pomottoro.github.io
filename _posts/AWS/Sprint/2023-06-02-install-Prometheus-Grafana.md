@@ -2,7 +2,7 @@
 title: "Prometheus, Grafana 설치"
 excerpt: "Prometheus, Grafana"
 
-categories: ["Service Monitoring"]
+categories: ["Sprint"]
 tags: ["서비스 모니터링", "Prometheus", "Grafana"]
 
 date: 2023-06-02
