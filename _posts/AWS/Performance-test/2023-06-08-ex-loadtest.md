@@ -3,7 +3,7 @@ title: "부하 테스트 계획"
 excerpt: "성능 테스트"
 
 categories: ["Performance Test"]
-tags: ["부하 테스트", "Throughput", "Latency", "Load test"]
+tags: ["부하 테스트", "Throughput", "Latency", "Load test tools"]
 
 date: 2023-06-08
 last_modified_at: 2023-06-08
