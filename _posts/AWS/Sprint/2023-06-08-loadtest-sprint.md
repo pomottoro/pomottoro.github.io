@@ -15,14 +15,13 @@ last_modified_at: 2023-06-08
 
 ## procedure
 
-1. ### aws ec2 인스턴스 생성
+### 1. aws ec2 인스턴스 생성
 
-   - aws 계정에서 EC2 인스턴스를 생성합니다.
+- aws 계정에서 EC2 인스턴스를 생성합니다.
 
-   - 버스트 기능이 있는 t2micro를 생성하세요
+- 버스트 기능이 있는 t2micro를 생성하세요
 
-   - ubuntu 20.04
-
+- ubuntu 20.04
 
 <br>
 
@@ -38,11 +37,11 @@ last_modified_at: 2023-06-08
 
 ![image](https://github.com/pomottoro/comments/assets/58872932/3c405ef7-5f71-4a5b-803f-667e42522307)
 
-2. ### ssh 접속 생성한 ec2에 접속을 합니다.
+### 2. ssh 접속 생성한 ec2에 접속을 합니다.
 
-   ![image](https://github.com/pomottoro/comments/assets/58872932/6a556e67-6649-41dc-ad15-69d1725c4a7b)
+![image](https://github.com/pomottoro/comments/assets/58872932/6a556e67-6649-41dc-ad15-69d1725c4a7b)
 
-3. ### install docker on EC2
+### 3. install docker on EC2
 
 ```bash
 # 충돌 방지 및 관련 모든 패키지 삭제
@@ -75,7 +74,7 @@ docker --version
 >
 > ![image](https://github.com/pomottoro/comments/assets/58872932/5e4dbb60-5a89-45ef-b4dc-4276a5ad22a0)
 
-4. ### run container
+### 4. run container
 
 - 성능 테스트를 위한 타깃 서버를 컨테이너로 배포합니다.
 
@@ -93,7 +92,7 @@ curl http://localhost:8080
 
 > ![image](https://github.com/pomottoro/comments/assets/58872932/cedc46bf-63a4-43fe-a552-e3047f0be7ea)
 
-5. ### [install k6](https://k6.io/docs/get-started/installation/)
+### 5. [install k6](https://k6.io/docs/get-started/installation/)
 
 - 공식 홈페이지를 이용하여 k6를 설치합니다. (트러블 슈팅 주의)
 - 클라우드 상에 빠른 설치를 위해서 snapd도 추천합니다. https://snapcraft.io/install/k6/ubuntu
@@ -107,9 +106,9 @@ sudo snap install k6
 
 > ![image](https://github.com/pomottoro/comments/assets/58872932/d6446ef8-bb82-48c6-a357-be076d53d5d4)
 
-6. ### [리포지토리](https://github.com/cs-devops-bootcamp/sprint_k6_test)에 유형별 테스트 스크립트가 작성되어 있습니다. 앞에서 설명한 내용과 비교하면서 코드의 구조를 잘 살펴보시기 바랍니다.
+### 6. [리포지토리](https://github.com/cs-devops-bootcamp/sprint_k6_test)에 유형별 테스트 스크립트가 작성되어 있습니다. 앞에서 설명한 내용과 비교하면서 코드의 구조를 잘 살펴보시기 바랍니다.
 
-7. ### run the tests 각각의 스크립트를 실행해 보고 ec2 인스턴스의 CPU 사용률 대시보드를 확인해 보세요. 
+### 7. run the tests 각각의 스크립트를 실행해 보고 ec2 인스턴스의 CPU 사용률 대시보드를 확인해 보세요. 
 
 ```bash
 k6 run basic_test.js
@@ -129,7 +128,7 @@ k6 run soak_test.js
 
 > 실제 테스트가 아니기 때문에 결과 확인을 위해 중간에 취소 함
 
-8. ### inspect aws burst credit 대시 보드의 CPU 크레딧 사용량(개수) 와 CPU 크레딧 밸런스(개수)를 관찰합니다.
+### 8. inspect aws burst credit 대시 보드의 CPU 크레딧 사용량(개수) 와 CPU 크레딧 밸런스(개수)를 관찰합니다.
 
 > ![image](https://github.com/pomottoro/comments/assets/58872932/51328876-45fd-4466-94da-dbca66b81bba)
 
