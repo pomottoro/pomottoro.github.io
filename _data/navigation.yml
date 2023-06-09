@@ -3,8 +3,8 @@ main:
   - title: "Home" 
     url: /index.html
     toggleable: true
-  - title: "Category"
-    url: /categories/
+  - title: "Tags"
+    url: /tags/
     toggleable: true
   - title : "Search"
     url: /search/
