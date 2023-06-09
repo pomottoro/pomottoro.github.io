@@ -6,11 +6,12 @@ main:
   - title: "Tags"
     url: /tags/
     toggleable: true
-  - title : "Search"
-    url: /search/
-    toggleable: true
-
-
+  
+  
+  
+  # - title : "Search"
+  #   url: /search/
+  #   toggleable: true
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
