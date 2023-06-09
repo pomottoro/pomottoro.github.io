@@ -7,15 +7,6 @@ tags: ["서비스 모니터링", "SLI", "SLO", "SLA"]
 
 date: 2023-06-05
 last_modified_at: 2023-06-05
-<<<<<<< HEAD
-
-header:
-  overlay_image: assets/images/Thumbnail/infinite.jpg
-  overlay_filter: 0.5 
-  teaser: assets/images/Thumbnail/monitoring-thumb.jpg
-published: true
-=======
->>>>>>> parent of df92387f (대규모 업데이트)
 ---
 
 # ✔ 서비스 수준 관련 용어

@@ -7,15 +7,6 @@ tags: ["Linux", "표준 스트림", "stdin", "stdout", "stderr"]
 
 date: 2023-03-10
 last_modified_at: 2023-06-09
-<<<<<<< HEAD
-
-header:
-  overlay_image: assets/images/Thumbnail/infinite.jpg
-  overlay_filter: 0.5 
-  teaser: assets/images/Thumbnail/Linux-thumbnail.png
-published: true
-=======
->>>>>>> parent of df92387f (대규모 업데이트)
 ---
 
 # 표준 스트림(Standard Stream)

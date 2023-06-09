@@ -7,15 +7,6 @@ tags: ["Bottleneck", "AWS", "Burst"]
 
 date: 2023-06-07
 last_modified_at: 2023-06-07
-<<<<<<< HEAD
-
-header:
-  overlay_image: assets/images/Thumbnail/infinite.jpg
-  overlay_filter: 0.5 
-  teaser: assets/images/Thumbnail/Presentation-thumbnail.jpg
-published: true
-=======
->>>>>>> parent of df92387f (대규모 업데이트)
 ---
 
 # Q. AWS에서는 인스턴스나 볼륨에 대해서 버스트 기능을 제공합니다. 이는 평소에 사용하지 않을 때의 성능을 모아두고, 부하가 발생할 경우 일시적으로 성능을 올리는 기능입니다. 이것이 어떤 메커니즘으로 작동하는지 연구하세요.

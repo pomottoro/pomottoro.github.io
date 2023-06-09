@@ -7,15 +7,6 @@ tags: ["부하 테스트", "Throughput", "Latency", "Load test tools"]
 
 date: 2023-06-08
 last_modified_at: 2023-06-08
-<<<<<<< HEAD
-
-header:
-  overlay_image: assets/images/Thumbnail/infinite.jpg
-  overlay_filter: 0.5 
-  teaser: assets/images/Thumbnail/monitoring-thumb.jpg
-published: true
-=======
->>>>>>> parent of df92387f (대규모 업데이트)
 ---
 
 # 부하 테스트 계획
