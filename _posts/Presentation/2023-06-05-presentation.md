@@ -7,12 +7,15 @@ tags: ["서비스 모니터링", "Prometheus", "Metric"]
 
 date: 2023-06-05
 last_modified_at: 2023-06-05
+<<<<<<< HEAD
 
 header:
   overlay_image: assets/images/Thumbnail/infinite.jpg
   overlay_filter: 0.5 
   teaser: assets/images/Thumbnail/Presentation-thumbnail.jpg
 published: true
+=======
+>>>>>>> parent of df92387f (대규모 업데이트)
 ---
 
 # Q1. 모니터링 시스템에는 메트릭 수집을 위한 두 가지 방식의 메커니즘이 존재합니다. 바로 Pull 방식과 Push 방식입니다. 프로메테우스는 어떤 방식의 메커니즘을 사용하나요? 또한 Pull 방식과 Push 방식은 어떻게 다르며, 장단점은 무엇인지, 또한 해당 방식을 사용하는 모니터링 도구는 어떤 것들이 있는지 연구해 보세요.

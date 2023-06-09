@@ -7,12 +7,15 @@ tags: ["서비스 모니터링"]
 
 date: 2023-05-31
 last_modified_at: 2023-05-31
+<<<<<<< HEAD
 
 header:
   overlay_image: assets/images/Thumbnail/infinite.jpg
   overlay_filter: 0.5 
   teaser: assets/images/Thumbnail/Presentation-thumbnail.jpg
 published: true
+=======
+>>>>>>> parent of df92387f (대규모 업데이트)
 ---
 
 #  람다를 모니터링하려는 경우, 메트릭을 활용해 어떤 질문이 나올 수 있을까요? [레퍼런스(Lambda 키 메트릭)](https://www.datadoghq.com/blog/key-metrics-for-monitoring-aws-lambda/)를 읽고, 어떤 질문을 해결할 수 있는지 알아봅시다. (힌트: 레퍼런스 문서에서 how many, how much, how long으로 검색해 보세요.)
