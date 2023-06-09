@@ -92,9 +92,3 @@
     font-weight: 700;
   }
 }
-
-.is--toggleable {
-  @include breakpoint($large) {
-    display: none;
-  }
-}
