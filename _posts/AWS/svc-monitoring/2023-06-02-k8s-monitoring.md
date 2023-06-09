@@ -9,9 +9,9 @@ date: 2023-06-02
 last_modified_at: 2023-06-02
 
 header:
-  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_image: assets/images/Thumbnail/infinite.jpg
   overlay_filter: 0.5 
-  teaser: assets\images\Thumbnail\k8s-thumb.png
+  teaser: assets/images/Thumbnail/k8s-thumb.png
 published: true
 ---
 

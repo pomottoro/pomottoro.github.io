@@ -9,9 +9,9 @@ date: 2023-03-09
 last_modified_at: 2023-06-09
 
 header:
-  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_image: assets/images/Thumbnail/infinite.jpg
   overlay_filter: 0.5 
-  teaser: assets\images\Thumbnail\Linux-thumbnail.png
+  teaser: assets/images/Thumbnail/Linux-thumbnail.png
 published: true
 ---
 

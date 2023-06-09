@@ -9,9 +9,9 @@ date: 2023-05-31
 last_modified_at: 2023-05-31
 
 header:
-  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_image: assets/images/Thumbnail/infinite.jpg
   overlay_filter: 0.5 
-  teaser: assets\images\Thumbnail\monitoring-thumb.jpg
+  teaser: assets/images/Thumbnail/monitoring-thumb.jpg
 published: true
 ---
 

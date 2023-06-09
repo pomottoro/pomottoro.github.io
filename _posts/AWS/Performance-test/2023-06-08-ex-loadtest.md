@@ -9,9 +9,9 @@ date: 2023-06-08
 last_modified_at: 2023-06-08
 
 header:
-  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_image: assets/images/Thumbnail/infinite.jpg
   overlay_filter: 0.5 
-  teaser: assets\images\Thumbnail\Sprint-thumbnail.png
+  teaser: assets/images/Thumbnail/monitoring-thumb.jpg
 published: true
 ---
 
