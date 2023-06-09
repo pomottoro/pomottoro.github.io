@@ -7,6 +7,12 @@ tags: ["연산자"]
 
 date: 2023-06-07
 last_modified_at: 2023-06-07
+
+header:
+  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_filter: 0.5 
+  teaser: assets\images\Thumbnail\js-thumb.png
+published: true
 ---
 
 # 연산자

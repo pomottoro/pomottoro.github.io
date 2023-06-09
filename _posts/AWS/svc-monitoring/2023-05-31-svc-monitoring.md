@@ -7,6 +7,12 @@ tags: ["서비스 모니터링", "메트릭", "SRE", "블랙박스", "화이트�
 
 date: 2023-05-31
 last_modified_at: 2023-05-31
+
+header:
+  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_filter: 0.5 
+  teaser: assets\images\Thumbnail\monitoring-thumb.jpg
+published: true
 ---
 
 # 	메트릭이란?

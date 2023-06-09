@@ -7,6 +7,12 @@ tags: ["서비스 모니터링", "쿠버네티스", "k8s"]
 
 date: 2023-06-02
 last_modified_at: 2023-06-02
+
+header:
+  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_filter: 0.5 
+  teaser: assets\images\Thumbnail\k8s-thumb.png
+published: true
 ---
 
 # 💡 쿠버네티스 클러스터 모니터링

@@ -7,6 +7,12 @@ tags: ["부하 테스트","Bottleneck", "Throughput", "Latency"]
 
 date: 2023-06-07
 last_modified_at: 2023-06-07
+
+header:
+  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_filter: 0.5 
+  teaser: assets\images\Thumbnail\Sprint-thumbnail.png
+published: true
 ---
 
 # 병목 구간의 확인과 개선 기본 지식

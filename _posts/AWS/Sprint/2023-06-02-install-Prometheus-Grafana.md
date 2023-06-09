@@ -7,6 +7,12 @@ tags: ["서비스 모니터링", "Prometheus", "Grafana"]
 
 date: 2023-06-02
 last_modified_at: 2023-06-02
+
+header:
+  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_filter: 0.5 
+  teaser: assets\images\Thumbnail\Sprint-thumbnail.png
+published: true
 ---
 
 # 💡 Prometheus, Grafana 설치

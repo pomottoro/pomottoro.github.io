@@ -7,6 +7,12 @@ tags: ["서비스 모니터링", "Prometheus", "Grafana"]
 
 date: 2023-06-02
 last_modified_at: 2023-06-02
+
+header:
+  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_filter: 0.5 
+  teaser: assets\images\Thumbnail\prom-grafana-thumb.png
+published: true
 ---
 
 # 💡 [Prometheus](https://prometheus.io/docs/introduction/overview/) 모니터링 시스템

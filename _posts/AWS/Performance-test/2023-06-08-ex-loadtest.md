@@ -7,6 +7,12 @@ tags: ["부하 테스트", "Throughput", "Latency", "Load test tools"]
 
 date: 2023-06-08
 last_modified_at: 2023-06-08
+
+header:
+  overlay_image: assets\images\Thumbnail\infinite.jpg
+  overlay_filter: 0.5 
+  teaser: assets\images\Thumbnail\Sprint-thumbnail.png
+published: true
 ---
 
 # 부하 테스트 계획
