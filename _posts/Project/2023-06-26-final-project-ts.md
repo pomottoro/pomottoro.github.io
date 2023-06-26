@@ -9,7 +9,7 @@ date: 2023-06-26
 last_modified_at: 2023-06-26
 ---
 
-## ERR .1) ECR 레포지토리 이미지 서비스 생성 실패
+## ERR .1) ECR 레포지토리 이미지 Task 생성 실패
 
 ---
 
@@ -22,22 +22,17 @@ last_modified_at: 2023-06-26
 ![task-fail2](https://github.com/pomottoro/comments/assets/58872932/79567198-a064-42b1-b83f-78c10f4a813a)
 
 - Fargate에서는 정상적으로 돌아가는 서비스가 EC2로 생성하면 지속된 에러가 괴롭혔다.
+- 확인 해본 결과 생성된 EC2가 서비스에 등록되지 않아 발생한 문제인 것을 확인했다. 
 
-![con-ec2](https://github.com/pomottoro/comments/assets/58872932/f6982594-ab50-4614-a59c-6206c780921b)
+![svc1](https://github.com/pomottoro/comments/assets/58872932/d939b391-ba4f-4173-98fc-0c063d725aa1)
 
-- 에러 로그에서 생성된 EC2의 메모리의 크기가 컨테이너보다 작아서 발생 된 문제 라는 것을 확인했다.
-
-![infra](https://github.com/pomottoro/comments/assets/58872932/3c515f54-8dad-4775-a515-10a44a942f17)
-
-![Task-def2](https://github.com/pomottoro/comments/assets/58872932/7b5b9cd1-4d6e-41e4-91e2-bb5d6c6d5d1b)
-
-- 당시 생성 했던 EC2 유형.
+- 용량 공급자 전략으로 클러스터 기본 옵션을 사용 했고 이것이 문제인 것을 확인 했다.
 
 ## ERR .2) 생성된 EC2 클러스터에 등록 불가.
 
 ---
 
-EC2 용량을 m6i.large로 늘렸으나 이번엔 EC2를 클러스터에서 못 잡는 결과가 다시 돌아왔다.
+ 시작 유형으로 직접 클러스터 생성 시 만들어지는 EC2를 등록하려 했으나 클러스터에 EC2가 잡히지 않았다. 
 
 ![cluster-ec2](https://github.com/pomottoro/comments/assets/58872932/9619141e-a0ad-4f7c-bb52-e1f37ae3e0b8)
 
@@ -55,18 +50,37 @@ EC2 용량을 m6i.large로 늘렸으나 이번엔 EC2를 클러스터에서 못 
 
 - 정상적으로 EC2가 활성화 되었다.
 
-## ERR .3) Service 배포 실패
+![infra](https://github.com/pomottoro/comments/assets/58872932/3c515f54-8dad-4775-a515-10a44a942f17)
+
+![Task-def2](https://github.com/pomottoro/comments/assets/58872932/7b5b9cd1-4d6e-41e4-91e2-bb5d6c6d5d1b)
+
+- 당시 생성 했던 EC2 유형.
+
+## ERR.3) 컨테이너 생성 실패
 
 ---
 
-하지만 서비스 배포에는 실패 했다.
+ EC2는 등록을 했지만 이번엔 컨테이너가 생성이 되지 않았다.
+
+![con-ec2](https://github.com/pomottoro/comments/assets/58872932/f6982594-ab50-4614-a59c-6206c780921b)
+
+- 에러 로그에서 생성된 EC2의 메모리의 크기가 컨테이너보다 작아서 발생 된 문제 라는 것을 확인했고 t3.nano 에서 m6i.large로 바꿨더니 정상적으로 컨테이너 생성이 되었다.
+
+![image](https://github.com/pomottoro/comments/assets/58872932/03f0dca1-9d74-4d2f-b8c2-0dea4e22237e)
+
+![image](https://github.com/pomottoro/comments/assets/58872932/8e863b9f-f7b2-44eb-9f54-af46886fe04e)
+
+## ERR .4) Service 배포 실패
+
+---
+
+ 서비스 배포에는 실패 했다.
 
 ![svc-fail](https://github.com/pomottoro/comments/assets/58872932/720f19ca-7e6c-4b2b-8d8f-dce9226e2f06)
 
 ![healthcheckfail](https://github.com/pomottoro/comments/assets/58872932/17947d15-db9a-44e0-8da9-6f0b8a878583)
 
-- health check 에 unhealthy가 떴다.
-- 원인이 타겟 그룹과 ALB 의 포트 매핑이 잘못되어 원활하게 포트를 못 잡고 있던것을 발견했다.
+- health check 에 unhealthy가 떴고, 원인이 타겟 그룹과 ALB 의 포트 매핑이 잘못되어 원활하게 포트를 못 잡고 있던 것을 확인했다.
 
 ![alb](https://github.com/pomottoro/comments/assets/58872932/ed9a80b1-2316-47d3-ad96-a86eef2ffd4b)
 
