@@ -15,7 +15,7 @@ last_modified_at: 2023-06-26
 
   작성한 백엔드 코드를 테스트 해보기 위해 ECR에 이미지 푸쉬 후 콘솔에서 테스트를 해보려 했으나 클러스터에 Task가 생성되지 않는 문제가 발생 했다. 
 
-![image](https://private-user-images.githubusercontent.com/58872932/246980479-43a869aa-e86f-474e-a1db-bd2a5f6a0aa3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg3Nzg0NTk4LCJuYmYiOjE2ODc3ODQyOTgsInBhdGgiOiIvNTg4NzI5MzIvMjQ2OTgwNDc5LTQzYTg2OWFhLWU4NmYtNDc0ZS1hMWRiLWJkMmE1ZjZhMGFhMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDYyNlQxMjU4MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MmYwMmNmMjNlMTc4OTAzMjY4MjIyODFiNzJlMTYzODcyZGFjYjMxNWJjYTAwMTUwYmM1OTAxZTE4MmVhMTVkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5LzYY9oRHgE-CpnMNAC2-DdOaBFfw8SKsFDOxHT99fg)
+![ecr](https://github.com/pomottoro/comments/assets/58872932/a6ff9c04-cd50-4035-aee3-8b6bc4fff062)
 
 ![task-fail](https://github.com/pomottoro/comments/assets/58872932/33808759-a2c3-4c90-b1de-f4313c760a02)
 
