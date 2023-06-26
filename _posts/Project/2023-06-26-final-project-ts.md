@@ -63,6 +63,9 @@ EC2 용량을 m6i.large로 늘렸으나 이번엔 EC2를 클러스터에서 못 
 
 ![svc-fail](https://github.com/pomottoro/comments/assets/58872932/720f19ca-7e6c-4b2b-8d8f-dce9226e2f06)
 
+![healthcheckfail](https://github.com/pomottoro/comments/assets/58872932/17947d15-db9a-44e0-8da9-6f0b8a878583)
+
+- health check 에 unhealthy가 떴다.
 - 원인이 타겟 그룹과 ALB 의 포트 매핑이 잘못되어 원활하게 포트를 못 잡고 있던것을 발견했다.
 
 ![alb](https://github.com/pomottoro/comments/assets/58872932/ed9a80b1-2316-47d3-ad96-a86eef2ffd4b)
@@ -79,8 +82,16 @@ EC2 용량을 m6i.large로 늘렸으나 이번엔 EC2를 클러스터에서 못 
 
 ![마참내](https://github.com/pomottoro/comments/assets/58872932/f06482b3-17e9-4969-8854-0988ab9668f4)
 
+![image](https://github.com/pomottoro/comments/assets/58872932/5fea8a39-cfce-4a4b-9e7e-819bad20b811)
+
 ![status200](https://github.com/pomottoro/comments/assets/58872932/ce95fe39-36b6-47df-8bbf-44ded47f777c)
 
 ![image](https://github.com/pomottoro/comments/assets/58872932/09efac68-332c-4e28-af63-e57521536790)
 
-- status code 200의 반환과 ALB 주소로 접속이 성공 했다.
+- Healthy와 status code 200의 반환과 ALB 주소로 접속이 성공 했다.
+
+<br>
+
+---
+
+<br>
