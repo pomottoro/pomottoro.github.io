@@ -56,25 +56,29 @@ last_modified_at: 2023-06-26
 
 - 당시 생성 했던 EC2 유형.
 
-## ERR.3) 컨테이너 생성 실패
+![image](https://github.com/pomottoro/comments/assets/58872932/8e863b9f-f7b2-44eb-9f54-af46886fe04e)
+
+- 등록된 인프라 컨테이너
+
+## ERR. 3) Task 생성 실패
 
 ---
 
- EC2는 등록을 했지만 이번엔 컨테이너가 생성이 되지 않았다.
+ EC2 컨테이너는 등록을 했지만 이번엔 Task가 생성이 되지 않았다.
 
 ![con-ec2](https://github.com/pomottoro/comments/assets/58872932/f6982594-ab50-4614-a59c-6206c780921b)
 
-- 에러 로그에서 생성된 EC2의 메모리의 크기가 컨테이너보다 작아서 발생 된 문제 라는 것을 확인했고 t3.nano 에서 m6i.large로 바꿨더니 정상적으로 컨테이너 생성이 되었다.
+- 에러 로그에서 생성된 EC2의 메모리의 크기가 컨테이너보다 작아서 발생 된 문제 라는 것을 확인했고 t3.nano 에서 m6i.large로 바꿨더니 정상적으로 Task가 생성 되었다.
 
 ![image](https://github.com/pomottoro/comments/assets/58872932/03f0dca1-9d74-4d2f-b8c2-0dea4e22237e)
 
-![image](https://github.com/pomottoro/comments/assets/58872932/8e863b9f-f7b2-44eb-9f54-af46886fe04e)
+![image](https://github.com/pomottoro/comments/assets/58872932/d8a24811-8d6f-43ef-b259-d8f531d93f0f)
 
 ## ERR .4) Service 배포 실패
 
 ---
 
- 서비스 배포에는 실패 했다.
+정상적으로 Task 생성에는 성공 했지만 서비스 배포에는 실패 했다.
 
 ![svc-fail](https://github.com/pomottoro/comments/assets/58872932/720f19ca-7e6c-4b2b-8d8f-dce9226e2f06)
 
