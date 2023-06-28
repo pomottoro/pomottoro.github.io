@@ -11,8 +11,6 @@ last_modified_at: 2023-06-26
 
 ## ERR .1) ECR 레포지토리 이미지 Task 생성 실패
 
----
-
   작성한 백엔드 코드를 테스트 해보기 위해 ECR에 이미지 푸쉬 후 콘솔에서 테스트를 해보려 했으나 클러스터에 Task가 생성되지 않는 문제가 발생 했다. 
 
 ![ecr](https://github.com/pomottoro/comments/assets/58872932/a6ff9c04-cd50-4035-aee3-8b6bc4fff062)
@@ -29,8 +27,6 @@ last_modified_at: 2023-06-26
 - 용량 공급자 전략으로 클러스터 기본 옵션을 사용 했고 이것이 문제인 것을 확인 했다.
 
 ## ERR .2) 생성된 EC2 클러스터에 등록 불가.
-
----
 
  시작 유형으로 직접 클러스터 생성 시 만들어지는 EC2를 등록하려 했으나 클러스터에 EC2가 잡히지 않았다. 
 
@@ -62,8 +58,6 @@ last_modified_at: 2023-06-26
 
 ## ERR. 3) Task 생성 실패
 
----
-
  EC2 컨테이너는 등록을 했지만 이번엔 Task가 생성이 되지 않았다.
 
 ![con-ec2](https://github.com/pomottoro/comments/assets/58872932/f6982594-ab50-4614-a59c-6206c780921b)
@@ -76,9 +70,7 @@ last_modified_at: 2023-06-26
 
 ## ERR .4) Service 배포 실패
 
----
-
-정상적으로 Task 생성에는 성공 했지만 서비스 배포에는 실패 했다.
+ 정상적으로 Task 생성에는 성공 했지만 서비스 배포에는 실패 했다.
 
 ![svc-fail](https://github.com/pomottoro/comments/assets/58872932/720f19ca-7e6c-4b2b-8d8f-dce9226e2f06)
 
