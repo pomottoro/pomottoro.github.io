@@ -102,7 +102,7 @@ last_modified_at: 2023-06-28
 
 ![image](https://github.com/pomottoro/comments/assets/58872932/8243b436-4845-482f-9ada-cdb58dc4215a)
 
-참고자료 : https://www.youtube.com/watch?v=-3YgdBpCN60
+참고자료 : [https://www.youtube.com/watch?v=-3YgdBpCN60](https://www.youtube.com/watch?v=-3YgdBpCN60)
 
 - **리소스에서 Fargate 대신 EC2를 선정한 이유**
 
@@ -136,7 +136,7 @@ last_modified_at: 2023-06-28
 
 ![image](https://github.com/pomottoro/comments/assets/58872932/535cd683-c759-4658-88d2-c25f496a02f8)
 
-참고자료 : https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-nat-gateway.html
+참고자료 : [https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-nat-gateway.html](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-nat-gateway.html)
 
 -  위에서 구상한 아키텍처에는 ECS가 Public Subnet 에 위치하도록 구성이 되어 있는데, 이 부분이 보안 부분에 취약 할 수 있다고 한다. 그래서 ECS 와 DB서버를 Private Subnet에 위치하게 두고 NAT Gateway를 Public Subnet으로 분리하여 ALB를 통한 ECS와의 통신은 유지하면서, 클러스터 내부의 IP주소 노출위험을 제거했다. 실제 많은 기업의 아키텍처가 이러한 방식으로 구성 되어 있다는 것을 알아보니 앞으로도 더욱 배워야 할 것이 많다는 것을 느꼈다.
 
